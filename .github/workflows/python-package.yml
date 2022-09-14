@@ -33,11 +33,11 @@ jobs:
     - name: Check docker install or not
       run: docker run hello-world
     - name: push to docker Hub
-      uses: docker/build-push-action@v3.1.1
+      uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME}}
         password: ${{ secrets.DOCKER_PASSWORD}}
-        repository: docker push adastraaero/Pipe
+        repository: docker push adastraaero/devopswithpy
         tag_with_ref: true
         
     
