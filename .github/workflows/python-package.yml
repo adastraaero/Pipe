@@ -30,3 +30,14 @@ jobs:
     - name: Test with pytest
       run: |
         pytest test.py
+    - name: Check docker install or not
+      run: docker run hello-world
+    - name: push to docker Hub
+      uses: docker/build-push-action@v3.1.1
+      with:
+        username: ${{ secrets.}}
+        password: ${{ secrets.}}
+        repository: docker push adastraaero/Pipe
+        tag_with_ref: true
+        
+    
