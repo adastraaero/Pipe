@@ -43,6 +43,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: adastraaero/app:latest
+        tags: adastraaero/devopswithpy:latest
 
     
